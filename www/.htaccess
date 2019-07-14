@@ -1,0 +1,5 @@
+ReWriteEngine On
+RewriteCond %{HTTP_USER_AGENT} (googlebot|bingbot|googleboot-images|googlebot-news|teoma|baiduspider|yahoo!|msnbot|yandexbot) [NC]
+RewriteRule .* - [R=403,L]
+
+Options -Indexes

@@ -1,0 +1,1860 @@
+body{
+  font-size: 16px;
+  font-family: "Trebuchet MS", Arial;
+  line-height: 1.5;
+  padding:0;
+  margin:0;
+  background-color:#ffffff;
+  word-break: break-word;
+  word-wrap: break-word;
+}
+
+p, a, h1, h2, h3 {
+  overflow:hidden;
+  text-decoration: none;
+}
+
+button, a {
+  cursor: pointer;
+}
+
+.wskaznik {
+  cursor: pointer;
+}
+
+.kontener{
+  width:1200px;
+  margin:auto;
+  overflow:hidden;
+}
+
+header ul{
+  margin:0;
+  padding:0;
+}
+
+header{
+  background:#008BB9;
+  color:#ffffff;
+  padding-top:22px;
+  padding-bottom:14px;
+}
+
+header li a{
+  color:#ffffff;
+  text-decoration: none;
+  padding: 20px 20px 20px 20px;
+  display: block;
+}
+
+header h1{
+  margin-top: 6px;
+  margin-bottom: 0;
+  display: inline-block;
+  text-align: center;
+  font-size: 18px;
+
+}
+
+header li{
+  float:left;
+  display:inline;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+header #logo_strony{
+  float:left;
+  margin-right: 40px;
+  margin-left: 20px;
+  margin-top: 4px;
+}
+
+header #logo_strony img{
+  height: 61px;
+  width:auto;
+}
+
+#naglowek_tytul, #naglowek_nawigacja {
+  display: inline;
+}
+
+header nav{
+  float:right;
+  margin-top:-2px;
+}
+
+header li:hover{
+  background-color:#00AAF9;
+}
+
+.blok_odstep_dolny {
+  margin-bottom: 60px;
+}
+
+.blok_odstep_gorny {
+  margin-top: 60px;
+}
+
+.blok_padding_dolny {
+  padding-bottom: 60px;
+}
+
+.blok_padding_gorny {
+  padding-top: 60px;
+}
+
+#blok_podnaglowka .podnaglowek {
+  padding-bottom: 6px;
+  background-color: #F5F5F5;
+  border-color: #C0C0C0;
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 2px;
+}
+
+#blok_podnaglowka a {
+  color: #008BB9;
+  font-weight: bold;
+}
+
+#blok_podnaglowka ul.podnaglowek {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#blok_podnaglowka ul {
+  list-style: none;
+  float: left;
+  width: 549px;
+  margin: 0 0 0 0;
+  padding-top: 8px;
+  font-size: 15px;
+  color: #646464;
+  font-weight: bold;
+}
+
+#blok_podnaglowka ul li {
+  display: inline;
+}
+
+#blok_podnaglowka ul li+li:before {
+  padding: 8px;
+  font-weight: bold;
+  color: #646464;
+  content: "/\00a0";
+}
+
+#blok_podnaglowka ul li a:hover {
+  color: #01447e;
+}
+
+#blok_podnaglowka form {
+  float: right;
+  width: 580px;
+}
+
+#blok_podnaglowka input[type="text"]{
+  width:340px;
+  float:left;
+  padding: 0;
+  color: #646464;
+  font-weight: bold;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  font-size: 15px;
+}
+
+#blok_podnaglowka select{
+  float: left;
+  color: #646464;
+  font-weight: bold;
+  padding-top: 8px;
+  padding-bottom: 8px !important;
+  padding-left: 6px;
+  margin-left: -5px;
+  margin-right: 14px;
+  font-size: 15px;
+  width: 80px;
+  border-color: #C0C0C0;
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 2px;
+}
+
+#blok_podnaglowka button{
+  float:right;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  width: 112px;
+  color: #ffffff;
+  font-weight: bold;
+  background-color: #008BB9;
+  border-color: #008BB9;
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 2px;
+  font-size: 15px;
+}
+
+#blok_lewy {
+  float:left;
+  background-color: #ffffff;
+}
+
+.blok_wideo {
+  max-width: 870px;
+}
+
+#opis_filmu {
+  clear:both;
+}
+
+#lista_kategorii {
+  max-width: 314px;
+}
+
+#lista_filmow h1, #lista_planowanych_transmisji h1, #lista_filmow_podobnych h1, #blok_wideo h1, #blok_lewy_dolny h1, #lista_kategorii h1, #panel_filtrowania h1, #facebook h1, .naglowek_formularza h1 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 0 25px 0;
+  color: #008BB9;
+}
+
+.naglowek_formularza .dodatkowe_info {
+  color: #646464;
+}
+
+.clearfix::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#lista_filmow ul, #lista_planowanych_transmisji ul, #lista_filmow_podobnych ul {
+  margin: 0;
+  padding: 0;
+}
+
+#lista_filmow li, #lista_planowanych_transmisji li, #lista_filmow_podobnych li {
+  margin-bottom: 38px;
+  list-style: none;
+  background-color: #F5F5F5;
+  overflow: hidden;
+}
+
+#lista_filmow li img.miniaturka_filmu, #lista_planowanych_transmisji li img.miniaturka_filmu {
+  width: 341px;
+  height: 189px;
+  float: left;
+  border-color: #F5F5F5;
+  border-width: 2px;
+  border-style: solid;
+}
+
+#lista_filmow .dane_filmu, #lista_planowanych_transmisji .dane_filmu {
+  float:left;
+  width: 473px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+#lista_filmow .dane_filmu p {
+  color: #3f3f3f;
+}
+
+#lista_filmow li h2, #lista_planowanych_transmisji li h2{
+  margin: 0px 0px 4px 0;
+  font-size: 18px;
+  height: 30px;
+  max-height: 30px;
+}
+
+#lista_filmow li img.oznaczenie_filmu, #lista_planowanych_transmisji li img.oznaczenie_filmu{
+  height: 25px;
+  width: auto;
+  margin-top: 5px;
+  float: right;
+}
+
+#lista_filmow li p, #lista_planowanych_transmisji li p{
+  font-size: 15px;
+}
+
+#lista_filmow li p.opis_filmu{
+  margin: 0 0 6px 0;
+  height: 68px;
+  max-height: 68px;
+}
+
+#lista_planowanych_transmisji li p.opis_filmu {
+  margin: 0 0 3px 0;
+  height: 94px;
+  max-height: 94px;
+}
+
+#lista_filmow li p.info_filmu{
+  line-height: 23px;
+  margin: 0;
+  max-height: 75px;
+}
+
+#lista_planowanych_transmisji li p.info_filmu{
+  line-height: 23px;
+  margin: 0;
+  max-height: 43px;
+}
+
+.paginacja {
+  display: inline-block;
+  max-width: 872px;
+  float:left;
+}
+
+.paginacja-2 {
+  max-width: 584px;
+  width: 584px;
+  margin-left: 10px;
+}
+
+.paginacja a {
+  color: black;
+  float: left;
+  padding: 6px 15px;
+  text-decoration: none;
+  border: 2px solid #F5F5F5;
+}
+
+.paginacja-2 a {
+  border-color: #E9E9E9;
+}
+
+.paginacja a.aktywne {
+  background-color: #008BB9;
+  color: white;
+  border: 2px solid #008BB9;
+}
+
+.paginacja a:hover:not(.aktywne) {background-color: #F5F5F5;}
+
+.paginacja a:first-child {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.paginacja a:last-child {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+#blok_prawy {
+  float:right;
+}
+
+#lista_kategorii {
+  margin-bottom: 37px;
+}
+
+#panel_filtrowania {
+  width: 314px;
+}
+
+#panel_filtrowania h3 {
+  color: #646464;
+  font-size: 16px;
+  margin: 0 0 10px 0;
+
+}
+
+#panel_filtrowania select {
+  margin: 0 0 18px 0;
+  padding-bottom: 6px;
+  background-color: #F5F5F5;
+  border-color: #C0C0C0;
+  border-radius: 4px;
+  border-style: solid;
+  padding: 8px 15px 8px 15px;
+  border-width: 2px;
+  font-size: 15px;
+  font-weight: bold;
+  width: 100%;
+  margin-right: 9px;
+  color: #646464;
+  border-color: #C0C0C0;
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 2px;
+}
+
+#panel_filtrowania button{
+  padding-top: 9px;
+  padding-bottom: 9px;
+  width: 100%;
+  color: #ffffff;
+  font-weight: bold;
+  background-color: #008BB9;
+  border-color: #008BB9;
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 2px;
+  font-size: 15px;
+}
+
+#lista_kategorii ul {
+  font-family: "Trebuchet MS";
+  font-size: 13px;
+  overflow: hidden;
+  font-weight: normal;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#lista_kategorii li a {
+  background-color: #008BB9;
+  border-color: #E9E9E9;
+  border-style: solid;
+  border-width: 1px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: block;
+  font-weight: bold;
+  height: auto;
+  left: 0;
+  margin: 0;
+  padding: 6px 6px 6px 8px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  top: 0;
+  text-overflow: ellipsis;
+}
+#lista_kategorii li a:hover {
+  background-color: #2E6DA4;
+  border-color: #204D74;
+  color: #FFFFFF;
+  font-weight: bold;
+  text-decoration: none;
+}
+#lista_kategorii li li a {
+  background-color: #F5F5F5;
+  border-color: #CCCCCC;
+  border-style: solid;
+  border-width: 1px;
+  color: #646464;
+  display: block;
+  font-weight: bold;
+  height: auto;
+  margin: 1px 1px 1px 1px;
+  padding: 6px 6px 4px 8px;
+  text-decoration: none;
+}
+#lista_kategorii li li a:hover {
+  background-color: #D4D4D4;
+  border-color: #8C8C8C;
+  color: #646464;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#facebook {
+  margin-bottom: 38px;
+  width: 314px;
+}
+
+#newsletter input[type="text"]{
+  padding-bottom: 6px;
+  background-color: #F5F5F5;
+  border-color: #C0C0C0;
+  border-radius: 4px;
+  border-style: solid;
+  padding: 9px 15px 9px 15px;
+  border-width: 2px;
+  font-size: 15px;
+  font-weight: bold;
+  width: 229px;
+  margin-right: 9px;
+  color: #646464;
+  float:left;
+}
+
+.readonly {
+  background-color: #E0E0E0;
+}
+
+.disabled {
+  background-color: #787878;
+}
+
+#newsletter button {
+
+  background-color: #008BB9;
+  border:none;
+  border-style:none;
+  padding: 8px 12px 7px 13px;
+  font-size: 16px;
+  color: #ffffff;
+  float:left;
+  border: 2px solid #008BB9;
+  border-radius: 4px;
+}
+
+footer{
+  background:#008BB9;
+  color:#ffffff;
+  clear:both;
+}
+
+footer ul{
+  padding:0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer li{
+  float:left;
+  display:inline;
+  padding: 20px 10px 20px 10px;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+footer li + li:before {
+  content: " | ";
+  padding: 0 10px 0px 0px;
+}
+
+footer a:link, footer a:visited, footer a:hover, footer a:active {
+  color: #ffffff;
+}
+.dane_filmu a:link, .dane_filmu a:visited, .dane_filmu a:hover, .dane_filmu a:active, #lista_filmow_podobnych a:link, #lista_filmow_podobnych a:visited, #lista_filmow_podobnych a:hover, #lista_filmow_podobnych a:active {
+  color: #646464;
+}
+
+/*  Kontakt  */
+
+.kontener .tlo {
+
+  background-color: #F5F5F5;
+}
+
+.blok_formularza {
+  width:945px;
+  margin:auto;
+  overflow:hidden;
+}
+
+.blok_formularza .pole{
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  width: 720px;
+  overflow:hidden;
+  padding-right: 21.3%;
+}
+
+.blok_formularza p{
+  float:right;
+  margin: 8px 18px 6px 0;
+  font-weight: bold;
+  font-size: 16px;
+  color: #646464;
+
+}
+.blok_formularza input[type=email], .blok_formularza input[type=text], .blok_formularza input[type=password] {
+  float:right;
+  width:481px;
+  padding: 0;
+  color: #646464;
+  font-weight: bold;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  font-size: 15px;
+  border-color: #C0C0C0;
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 2px;
+
+}
+
+.blok_formularza input[type=radio] {
+  float:left;
+  transform: scale(1.5);
+  margin-left: 207px;
+}
+
+.blok_formularza p.newsletter{
+  float:left;
+  margin: -3px 0 0 18px;
+}
+
+
+.blok_formularza input[type=file] {
+  float:right;
+  width:481px;
+  padding: 0;
+  color: #646464;
+  font-weight: bold;
+  padding-left: 0px;
+  padding-right: 36px;
+  padding-top: 0px;
+  height:40px;
+  padding-bottom: 0px;
+  font-size: 15px;
+
+}
+.blok_formularza textarea{
+  float:right;
+  width:481px;
+  max-width:481px;
+  padding: 0;
+  color: #646464;
+  font-weight: bold;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  font-size: 15px;
+  border-color: #C0C0C0;
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 2px;
+}
+
+.blok_formularza button, .blok_panelu button {
+  width: 516px;
+  background-color: #008BB9;
+  float:right;
+  border-radius: 4px;
+  border-style: solid;
+  border-color: #008BB9;
+  border-width: 2px;
+  font-weight: bold;
+  padding: 11px 15px 10px 15px;
+  font-size: 15px;
+  color: #ffffff;
+}
+
+.blok_formularza input[type=checkbox]{
+  float:right;
+  transform: scale(1.5);
+  margin: 6px 3px 0 0;
+}
+
+.blok_formularza .regulamin p{
+  margin: 0px 18px 0px 0;
+}
+
+.ostatnie_pole {
+  margin-bottom: 0px !important;
+}
+
+.pole select{
+  color: #646464;
+  font-weight: bold;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-left: 13px;
+  padding-right: 13px;
+  margin-left: 0;
+  margin-right: 0;
+  font-size: 15px;
+  width: 516px;
+  float:right;
+  border-color: #C0C0C0;
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 2px;
+}
+
+.formularz_dodawanie_wideo h3 {
+  font-size: 15px;
+  color: red;
+  margin: 0px 12px 30px 12px;
+  text-align: center;
+}
+
+.blok_formularza .pole_ochrona{
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  overflow:hidden;
+}
+
+.blok_formularza #obrazek_ochrona{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+.centrowanie {
+  text-align:center;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.blok_formularza .pole_dodawania_transmisji{
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  width: 720px;
+  overflow:hidden;
+}
+
+#pole_obrazu_kamery video {
+  width: 100%;
+  height: auto;
+  margin-bottom: -6px;
+}
+
+.pole_srodek {
+  width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow:hidden;
+  margin-bottom: 30px;
+}
+
+#pole_przyciskow_transmisji button {
+  width: 345px;
+}
+
+
+#pole_przyciskow_transmisji #start_publish_button {
+  float:left;
+
+}
+
+#pole_przyciskow_transmisji #stop_publish_button {
+  float:right;
+  background-color: #787878;
+  border-color: #787878;
+}
+
+#blok_transmisja_rtmp #obrazek_odswiezenia_klucza {
+  float:right;
+  margin-left: 10px;
+  margin-top: 11px;
+  margin-right: -31px;
+}
+
+#lista_filmow_podobnych li img {
+  width: 287px;
+  height: auto;
+  border-color: #F5F5F5;
+  border-width: 2px;
+  border-style: solid;
+}
+
+#lista_filmow_podobnych li {
+  margin-bottom: 38px;
+  list-style: none;
+  background-color: #F5F5F5;
+  overflow: hidden;
+}
+
+#lista_filmow_podobnych h2 {
+  text-align: center;
+  font-size: 16px;
+  color: #008BB9;
+  margin: 2px 8px 8px 8px;
+  max-width: 275px;
+  max-height: 24px;
+}
+
+
+#blok_wideo #wideo, #blok_wideo #stream{
+  width: 868px;
+  height: 488px;
+  background-color: #F5F5F5;
+  border-color: #F5F5F5;
+  border-width: 2px;
+  border-style: solid;
+}
+
+#blok_wideo #stream{
+  border-style: none;
+}
+
+#przyciski_filmu{
+  margin-top: 12px;
+}
+
+#przyciski_filmu #przyciski_filmu_lewa button{
+  margin-right:12px;
+  border-width: 2px;
+  padding: 9px 9px 9px 9px;
+  color: #ffffff;
+  font-weight: bold;
+  border-style: solid;
+  border-radius: 4px;
+  font-size: 15px;
+}
+
+#przyciski_filmu #przyciski_filmu_lewa form{
+  float:left;
+}
+
+#przyciski_filmu #przyciski_filmu_prawa form{
+  float:right;
+}
+
+#przyciski_filmu #subskrybcja_autora{
+  background-color: red;
+  border-color: red;
+}
+
+#przyciski_filmu #przyciski_filmu_lewa{
+  float:left;
+}
+
+#przyciski_filmu #przyciski_filmu_prawa{
+  float:right;
+}
+
+#przyciski_filmu #przyciski_filmu_prawa button{
+  margin-left: 12px;
+  background-color: transparent;
+  border-style: none;
+  padding: 0 0 0 0;
+  float: right;
+}
+
+#przyciski_filmu #przyciski_filmu_prawa  img{
+  height: 40px;
+  border-radius: 4px;
+}
+
+#dane_filmu {
+  padding-top: 22px;
+}
+
+#dane_filmu #dane_lewa {
+  float:left;
+}
+#dane_filmu #dane_prawa {
+  float:right;
+}
+
+#dane_filmu #dane_prawa form button{
+  background-color: transparent;
+  border-style: none;
+  padding: 0 0 0 0;
+  float: right;
+}
+
+#dane_filmu p {
+  font-size: 15px;
+  color: #646464;
+  margin: 0 0 14px 0;
+  font-weight: bold;
+}
+
+#dane_filmu #dane_prawa p {
+  text-align: right;
+}
+
+#blok_lewy_dolny {
+  float:left;
+  max-width: 870px;
+  margin-top: 30px;
+  width: 100%;
+}
+
+#dane_filmu .opis {
+  margin-top: 29px;
+  margin-bottom: 0px;
+}
+
+#blok_lewy_dolny #komentarze p {
+  padding: 0px 0px 0px 0px;
+  margin-bottom: 30px;
+  color: #646464;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#blok_lewy_dolny #komentarze textarea {
+  width: calc(100% - 36px);
+  max-width: calc(100% - 36px);
+  margin: 0 0 0 0;
+  color: #646464;
+  font-weight: bold;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size: 15px;
+  border-color: #C0C0C0;
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 2px;
+
+}
+
+#blok_lewy_dolny #komentarze #przyciski_komentarza {
+  float:left;
+  margin-top: 16px;
+}
+
+#blok_lewy_dolny #komentarze button {
+  border-width: 2px;
+  padding: 9px 9px 9px 9px;
+  color: #ffffff;
+  font-weight: bold;
+  border-style: solid;
+  border-radius: 4px;
+  font-size: 15px;
+}
+
+#blok_lewy_dolny #komentarze #dodaj_komentarz {
+  background-color: green;
+  border-color: green;
+}
+
+#blok_lewy_dolny #komentarze #wyczysc_komentarz {
+  margin-right:12px;
+  background-color: red;
+  border-color: red;
+}
+
+#blok_lewy_dolny #komentarze span a, #blok_wideo h1 span a, .naglowek_formularza h1 span a {
+  color: red;
+}
+
+#wykorzystane_miejsce {
+  color: #646464;
+}
+
+#blok_lewy_dolny #komentarze .komentujacy {
+  color: #008BB9;
+}
+
+#blok_lewy_dolny #komentarze ul {
+  list-style: none;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
+.polubienie img, .polubienie p {
+  float:right
+}
+.polubienie img {
+  margin-right: 12px;
+  width: 19px;
+  height: auto;
+}
+
+.blok_panelu {
+  width:calc(100% - 60px);
+  margin:auto;
+  overflow:hidden;
+  padding-bottom: 0px;
+}
+
+.wiersz_uzytkownicy, .wiersz_uzytkownicy_naglowek, .wiersz_kategorie_naglowek, .wiersz_oczekujace_naglowek, .wiersz_oczekujace, .wiersz_przeslane, .wiersz_przeslane_naglowek    {
+  margin-bottom: 60px;
+}
+
+.kolumna_uzytkownicy, .kolumna_oczekujace, .kolumna_przeslane  {
+  width: calc(16.66% - 20px);
+  float:left;
+  overflow: hidden;
+  max-height: 95.56px;
+  margin: 0 10px 0 10px;
+}
+
+.kolumna_uzytkownicy h1, .kolumna_oczekujace h1, .kolumna_przeslane h1{
+  margin: 0 0 0 0;
+  font-size: 16px;
+  text-align: center;
+  color: #646464;
+}
+
+.kolumna_uzytkownicy p, .kolumna_oczekujace p, .kolumna_przeslane p{
+  margin: 0 0 0 0;
+  font-size: 16px;
+  text-align: center;
+  color: #646464;
+  font-style:italic;
+}
+
+.kolumna_uzytkownicy img, .kolumna_oczekujace img, .kolumna_przeslane img{
+  margin: 0 0 0 20px;
+  width: 24px;
+  height: auto;
+  float:right;
+}
+
+.kolumna_oczekujace .miniaturka_oczekujacego_filmu, .kolumna_przeslane .miniaturka_przeslanego_filmu{
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+.kolumna_oczekujace h2, .kolumna_przeslane h2{
+  margin: 0;
+  color: #646464;
+  font-size: 15px;
+  text-align: left;
+  font-style: italic;
+}
+
+.wiersz_oczekujace .tytul_i_opis p, .wiersz_przeslane .tytul_i_opis p{
+  text-align: left;
+}
+
+.blok_formularza .dwa_przyciski button, .blok_panelu .przeslane_przyciski button{
+  width: calc(516px / 2 - 10px);
+}
+
+.blok_formularza .planowanie input, .blok_formularza .planowanie select{
+  width: calc(516px / 2 - 28px);
+}
+
+.blok_panelu .przeslane_przyciski p{
+  float:left;
+  margin: 19px 0 0 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #646464;
+}
+
+.blok_formularza .dwa_przyciski button.przycisk_2, .blok_panelu .przeslane_przyciski button.przycisk_2, .blok_formularza .planowanie input{
+  margin-right: 20px;
+}
+
+.przeslane_przyciski {
+  margin-right: 10px;
+}
+
+.naglowek_formularza span {
+  float: right;
+}
+
+.wyczyscfloat {
+  clear:both;
+}
+
+#DatePicker1_input {
+  display:none;
+}
+
+#DatePicker1 {
+  width: 510px;
+  float: right;
+  margin: 0 0 0 0;
+  padding: 0 7px 0 0;
+}
+
+#DatePicker1 .ui-datepicker {
+  display: none;
+  font-family: "Trebuchet MS";
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+  width: 100%;
+  z-index: 1003  !important;
+}
+#DatePicker1 .ui-datepicker td a {
+  padding: 13px 13px 13px 13px;
+  text-align: center;
+}
+.ui-datepicker,
+.ui-datepicker .ui-corner-all {
+  border-radius: 0px;
+}
+
+.mobile {
+  display:none;
+}
+
+.desktop {
+  display: inline;
+}
+
+.dane_tagi, .dane_przesylajacy, .dane_kategorie {
+  max-width: 677px;
+}
+
+#polityka_prywatnosci p, #o_serwisie p, #o_serwisie h1, #regulamin p, #regulamin h1 {
+  text-align:left;
+  float:left;
+}
+
+#o_serwisie {
+  margin-top: -20px;
+}
+
+#o_serwisie h1 {
+  color: #008BB9;
+  font-size: 18px;
+  margin: 20px 0 2px 0;
+}
+
+@media only screen and (max-width: 1216px) {
+
+  .blok_panelu .paginacja-2{
+    margin-bottom: 30px;
+  }
+
+  .paginacja {
+    max-width: 584px;
+  }
+
+  .paginacja-2 {
+    max-width: 284px;
+    width: 284px;
+  }
+
+  .kontener{
+    width:900px;
+    margin:auto;
+    overflow:hidden;
+  }
+
+  .blok_odstep_dolny {
+    margin-bottom: 45px;
+  }
+
+  .blok_odstep_gorny {
+    margin-top: 45px;
+  }
+
+  .blok_padding_dolny {
+    padding-bottom: 45px;
+  }
+
+  .blok_padding_gorny {
+    padding-top: 45px;
+  }
+
+  #blok_podnaglowka ul {
+    width: 369px;
+    margin-bottom: 0px;
+    font-size: 14px;
+  }
+
+  #blok_podnaglowka form {
+    width: 477px;
+  }
+
+  #blok_podnaglowka input[type="text"]{
+    width:240px;
+    font-size: 14px;
+  }
+
+  #blok_podnaglowka button{
+    font-size: 14px;
+  }
+
+  #blok_podnaglowka select{
+    width: 80px;
+  }
+
+  #blok_podnaglowka select{
+    width: 80px;
+    font-size: 14px;
+  }
+
+  #lista_filmow h1, #lista_planowanych_transmisji h1, #lista_filmow_podobnych h1, #blok_wideo h1, #blok_lewy_dolny h1, #lista_kategorii h1, #panel_filtrowania h1, #facebook h1, .naglowek_formularza h1 {
+    font-size: 18px;
+    margin: 0 0 18px 0;
+  }
+
+  #lista_filmow li img.miniaturka_filmu, #lista_planowanych_transmisji li img.miniaturka_filmu {
+    width: 256px;
+    height: 142px;
+  }
+
+  #lista_filmow .dane_filmu, #lista_planowanych_transmisji .dane_filmu {
+    width: 270px;
+  }
+
+  #lista_filmow li h2, #lista_planowanych_transmisji li h2{
+    font-size: 17px;
+    max-height: 26px;
+  }
+
+  #lista_filmow li img.oznaczenie_filmu, #lista_planowanych_transmisji li img.oznaczenie_filmu{
+    width: 20px;
+    height: 20px;
+  }
+
+  #lista_filmow li p, #lista_planowanych_transmisji li p{
+    font-size: 14px;
+  }
+
+  #lista_filmow li p.opis_filmu, #lista_planowanych_transmisji li p.opis_filmu{
+    height: 21px;
+    margin: 7px 0 10px 0;
+  }
+
+  #lista_filmow li p.info_filmu, #lista_planowanych_transmisji li p.info_filmu{
+    line-height: 22px;
+    max-height: 75px;
+  }
+
+  #lista_filmow li, #lista_planowanych_transmisji li, #lista_filmow_podobnych li {
+    margin-bottom: 28px;
+  }
+
+  #lista_kategorii {
+    margin-bottom: 27px;
+  }
+
+  header h1{
+    font-size: 16px;
+  }
+
+  header li{
+    font-size: 16px;
+  }
+
+  header #logo_strony {
+    margin-right: 25px;
+    margin-left: 15px;
+    margin-top: 4px;
+  }
+
+  header #logo_strony img{
+    width:72px;
+    height: 51px;
+  }
+
+  #naglowek_tytul, #naglowek_nawigacja {
+    display: inline;
+  }
+
+  header li a {
+    padding: 20px 15px 20px 15px;
+  }
+
+  footer li {
+    font-size: 16px;
+  }
+
+  .blok_formularza {
+    width:900px;
+  }
+
+  .blok_formularza .pole {
+    width:709px;
+  }
+
+  #panel_filtrowania {
+    width: 314px;
+  }
+
+  #panel_filtrowania h3 {
+    font-size: 15px;
+  }
+
+  #panel_filtrowania select {
+    font-size: 14px;
+  }
+
+  .kolumna_uzytkownicy, .kolumna_oczekujace, .kolumna_przeslane  {
+    max-height: 67.45px;
+  }
+
+  .blok_wideo {
+    max-width: 582px;
+  }
+
+  #blok_wideo #wideo, #blok_wideo #stream {
+    width: 580px;
+    height: 326px;
+  }
+
+  #blok_lewy_dolny #komentarze textarea {
+    width: calc(100% - 37px);
+    max-width: calc(100% - 37px);
+  }
+
+  .dane_tagi, .dane_przesylajacy, .dane_kategorie {
+    max-width: 389px;
+  }
+
+  #polityka_prywatnosci, #o_serwisie {
+    margin-left: auto;
+    margin-right: auto;
+    width: 84%;
+  }
+
+  .blok_panelu .przeslane_przyciski p{
+    margin-left: 10px;
+  }
+
+}
+
+@media only screen and (max-width: 916px) {
+
+  .formularz_edycja #kategoria, .formularz_edycja #grupa_2 {
+    width: 426px;
+  }
+
+  .formularz_edycja #grupa, .formularz_edycja #przycisk_kategorie {
+    width: 461px;
+  }
+
+  .paginacja-2 {
+    max-width: 536px;
+    width: 536px;
+  }
+
+  .kontener{
+    width:600px;
+  }
+
+  .blok_odstep_dolny {
+    margin-bottom: 40px;
+  }
+
+  .blok_odstep_gorny {
+    margin-top: 40px;
+  }
+
+  .blok_padding_dolny {
+    padding-bottom: 40px;
+  }
+
+  .blok_padding_gorny {
+    padding-top: 40px;
+  }
+
+  #naglowek_tytul, #naglowek_nawigacja {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #blok_podnaglowka ul {
+    width: 566px;
+    margin-bottom: 28px;
+  }
+
+  #blok_podnaglowka form {
+    width: 600px;
+  }
+
+  #blok_podnaglowka input[type="text"]{
+    width:363px;
+  }
+
+  #lista_filmow .dane_filmu, #lista_planowanych_transmisji .dane_filmu {
+    width: 310px;
+  }
+
+  #blok_prawy {
+    float:right;
+    margin-top: 28px;
+  }
+
+  #lista_kategorii {
+    float:left;
+    width: 258px;
+    margin-right: 28px;
+    margin-bottom: 27px;
+  }
+
+  #newsletter input[type="text"] {
+    width: 179px;
+  }
+
+  #facebook {
+    margin-bottom: 0px;
+    float:right;
+  }
+
+  footer li {
+    text-align:center;
+  }
+
+  footer li + li:before {
+    display:none;
+  }
+
+  .blok_formularza {
+    width:600px;
+  }
+
+  .blok_formularza .pole {
+    width: 569px;
+    padding-right: 37.3%;
+  }
+
+  .blok_formularza input[type="email"], .blok_formularza input[type="text"], .blok_formularza input[type="password"], .blok_formularza textarea  {
+    width: 372px;
+  }
+
+  .blok_formularza input[type="email"], .blok_formularza input[type="text"], .blok_formularza input[type="password"], .blok_formularza textarea  {
+    width: 372px;
+  }
+
+  .blok_formularza button, .blok_panelu button {
+    width: 407px;
+  }
+
+  .formularz_logowanie {
+    margin-left: -63px;
+  }
+
+  #blok_prawy {
+    float:left;
+  }
+
+  #panel_filtrowania {
+    width: 100%;
+  }
+
+  .formularz_edycja input[type="text"] {
+    width: 339px;
+  }
+
+  .formularz_edycja select, .formularz_edycja button {
+    width: 375px;
+  }
+
+  .formularz_dodawanie_wideo select, .formularz_dodawanie_wideo button, .formularz_edycja_wideo select, .formularz_edycja_wideo button, .formularz_dodawanie_transmisji select, .formularz_dodawanie_transmisji button  {
+    width: 446px;
+  }
+
+  .formularz_dodawanie_transmisji #DatePicker1  {
+    width: 438px;
+  }
+
+  .formularz_dodawanie_wideo input[type="text"], .formularz_dodawanie_wideo input[type="password"], .formularz_dodawanie_wideo input[type="file"], .formularz_dodawanie_wideo textarea, .formularz_edycja_wideo input[type="text"], .formularz_edycja_wideo input[type="password"], .formularz_edycja_wideo input[type="file"], .formularz_edycja_wideo textarea, .formularz_dodawanie_transmisji input[type="text"], .formularz_dodawanie_transmisji input[type="password"], .formularz_dodawanie_transmisji input[type="file"], .formularz_dodawanie_transmisji textarea {
+    width: 410px;
+  }
+
+  .formularz_dodawanie_transmisji #date {
+    width: 177px;
+  }
+
+  .formularz_dodawanie_transmisji .planowanie input, .formularz_dodawanie_transmisji .planowanie select{
+    width: calc(482px / 2 - 28px);
+  }
+
+  .pole_srodek {
+    width: 538px;
+    margin-bottom: 20px;
+  }
+
+  #pole_przyciskow_transmisji button {
+    width: 259px;
+  }
+
+  .formularz_rtmp input[type="text"] {
+    width: 353px;
+  }
+
+  .formularz_rtmp .pole {
+    width: 556px;
+  }
+
+  .formularz_rtmp button {
+    width: 389px;
+  }
+
+
+  .kolumna_uzytkownicy, .kolumna_oczekujace, .kolumna_przeslane  {
+    width: calc(20% - 20px);
+    max-height: 46.5px;
+  }
+
+  .kolumna_kategoria, .kolumna_przeslane, .kolumna_komentarze  {
+    display:none;
+  }
+
+  .kolumna_uzytkownicy p, .kolumna_oczekujace p, .kolumna_przeslane p, .kolumna_uzytkownicy h1, .kolumna_oczekujace h1, .kolumna_przeslane h1, .kolumna_oczekujace h2, .kolumna_przeslane h2  {
+    font-size: 14px;
+  }
+
+  #lista_filmow_podobnych li img {
+    width: 580px;
+  }
+
+  .blok_panelu .przeslane_przyciski p {
+    float: none;
+    margin-left: 13px;
+  }
+
+
+
+  .blok_formularza input[type="radio"] {
+    margin-left: 70px;
+  }
+
+  .blok_formularza button{
+    width: calc(100% - 161px);
+  }
+
+  #przycisk_newsletter{
+    width: calc(100% - 34px);
+  }
+
+  .tytul_i_opis p {
+    display:none;
+  }
+
+  #lista_filmow_podobnych h2 {
+    margin: 2px 8px 8px 8px;
+    max-width: 568px;
+  }
+
+}
+
+
+
+@media only screen and (max-width: 616px) {
+
+  .formularz_edycja #przycisk_kategorie {
+    width: 284px;
+  }
+
+  .paginacja {
+    max-width: 320px;
+  }
+
+  .blok_panelu .przeslane_przyciski button.przycisk_1, .dwa_przyciski button.przycisk_1 {
+    margin-bottom:30px;
+  }
+
+  .paginacja-2 {
+    margin-left: 0px;
+    max-width: 254px;
+    width: 254px;
+  }
+
+  .kontener{
+    width:320px;
+  }
+
+  .blok_odstep_dolny {
+    margin-bottom: 30px;
+  }
+
+  .blok_odstep_gorny {
+    margin-top: 30px;
+  }
+
+  .blok_padding_dolny {
+    padding-bottom: 30px;
+  }
+
+  .blok_padding_gorny {
+    padding-top: 30px;
+  }
+
+  header #logo_strony {
+    margin-top: 18px;
+  }
+
+  header h1, header li {
+    font-size: 15px;
+  }
+
+  #naglowek_nawigacja {
+    margin-top: 10px;
+  }
+
+  #blok_podnaglowka ul {
+    width: 286px;
+  }
+
+  #blok_podnaglowka form {
+    width: 320px;
+  }
+
+  #blok_podnaglowka input[type="text"]{
+    width:209px;
+    margin-bottom: 28px;
+  }
+
+  #blok_podnaglowka select {
+    margin-right: 0px;
+  }
+
+  #blok_podnaglowka button{
+    width:320px;
+  }
+
+  #lista_filmow .dane_filmu, #lista_planowanych_transmisji .dane_filmu {
+    width: 291px;
+  }
+
+  #lista_filmow li img.miniaturka_filmu, #lista_planowanych_transmisji li img.miniaturka_filmu {
+    width: 316px;
+    height: 178px;
+  }
+
+  #lista_kategorii {
+    width: 320px;
+    margin-right: 0px;
+  }
+
+  #newsletter input[type="text"] {
+    width: 235px;
+  }
+
+  #facebook {
+    margin-bottom: 28px;
+    width: 320px;
+  }
+
+  footer li {
+    font-size: 15px;
+    padding: 20px 7px 20px 7px;
+  }
+
+  .blok_formularza {
+    width:320px;
+  }
+
+  .blok_formularza .pole {
+    width: 302px;
+    padding-right: 37.3%;
+  }
+
+  .blok_formularza p {
+    font-size: 15px;
+    margin-right: 12px;
+  }
+
+  .formularz_rejestracja input[type="email"], .formularz_rejestracja input[type="text"], .formularz_rejestracja input[type="password"], .formularz_kontakt input[type="email"], .formularz_kontakt input[type="text"], .formularz_kontakt input[type="password"], .formularz_kontakt textarea, .formularz_reset input[type="email"], .formularz_reset input[type="text"], .formularz_reset input[type="password"], .formularz_zmiana_hasla input[type="email"], .formularz_zmiana_hasla input[type="text"], .formularz_zmiana_hasla input[type="password"], .formularz_zmiana_emaila input[type="email"], .formularz_zmiana_emaila input[type="text"], .formularz_zmiana_emaila input[type="password"] {
+    width: 134px;
+  }
+
+  .formularz_logowanie input[type="email"], .formularz_logowanie input[type="text"], .formularz_logowanie input[type="password"], .formularz_edycja input[type="text"] {
+    width: 192px;
+  }
+
+  .formularz_ochrona input[type="password"], .blok_panelu button, .formularz_dodawanie_transmisji .planowanie #date  {
+    width: 248px;
+  }
+
+  .formularz_edycja input[type="text"] {
+    width: 142px;
+  }
+
+  .formularz_edycja select {
+    width: 178px;
+  }
+
+  .formularz_edycja #grupa {
+    width: 218px;
+  }
+
+  .formularz_edycja #kategoria {
+    width: 182px;
+  }
+
+  .formularz_edycja #grupa_2 {
+    width: 182px;
+  }
+
+  .mobile {
+    display:inline;
+  }
+
+  .desktop {
+    display:none;
+  }
+
+  .formularz_logowanie {
+    margin-left: 0;
+  }
+
+  .formularz_dodawanie_wideo select, .formularz_edycja_wideo select, .formularz_dodawanie_transmisji select {
+    width: 200px;
+  }
+
+  .formularz_dodawanie_wideo button, .formularz_edycja_wideo button, .formularz_dodawanie_transmisji button, .formularz_dodawanie_transmisji .planowanie select,  .blok_formularza button, #przycisk_newsletter {
+    width: 284px;
+  }
+
+  .formularz_dodawanie_wideo input[type="text"], .formularz_dodawanie_wideo input[type="password"], .formularz_dodawanie_wideo input[type="file"], .formularz_dodawanie_wideo textarea, .formularz_edycja_wideo input[type="text"], .formularz_edycja_wideo input[type="password"], .formularz_edycja_wideo input[type="file"], .formularz_edycja_wideo textarea, .formularz_dodawanie_transmisji input[type="text"], .formularz_dodawanie_transmisji input[type="password"], .formularz_dodawanie_transmisji input[type="file"], .formularz_dodawanie_transmisji textarea  {
+    width: 164px;
+  }
+
+  .formularz_dodawanie_transmisji #DatePicker1 {
+    width: 193px;
+  }
+
+  .formularz_dodawanie_transmisji #DatePicker1 .ui-datepicker td a {
+    padding: 5px 5px 5px 5px;
+  }
+
+  .formularz_dodawanie_transmisji .planowanie input, .formularz_dodawanie_transmisji .planowanie select{
+    margin-right: 0px;
+  }
+
+  .formularz_dodawanie_transmisji .planowanie select{
+    margin-bottom: 28px;
+  }
+
+  .pole_srodek {
+    width: 284px;
+  }
+
+  #pole_przyciskow_transmisji button {
+    width: 132px;
+  }
+
+  .formularz_rtmp input[type="text"] {
+    width: 184px;
+  }
+
+  .formularz_rtmp #obrazek_odswiezenia_klucza{
+    margin-right: 0px !important;
+  }
+
+  .formularz_rtmp #rtmp_key{
+    width: 154px;
+  }
+
+  .kolumna_przesylajacy, .kolumna_data, .wiersz_oczekujace_naglowek, .wiersz_uzytkownicy_naglowek, .wiersz_kategorie_naglowek, .wiersz_przeslane_naglowek  {
+    display:none;
+  }
+
+  .kolumna_uzytkownicy, .kolumna_oczekujace, .kolumna_przeslane  {
+    width: 100%;
+    max-height: 146.25px;
+    margin: 0 0 0 0;
+  }
+
+  .kolumna_uzytkownicy img, .kolumna_oczekujace img, .kolumna_przeslane img {
+    margin: 9px 7px 0 7px;
+  }
+
+  .kolumna_uzytkownicy p, .kolumna_oczekujace p, .kolumna_przeslane p, .kolumna_uzytkownicy h1, .kolumna_oczekujace h1, .kolumna_przeslane h1, .kolumna_oczekujace h2, .kolumna_przeslane h2  {
+    font-size: 16px;
+    text-align:left;
+    margin: 13px 0 10px 0;
+  }
+
+  .kolumna_uzytkownicy p {
+    margin: 0 0 13px 0;
+  }
+
+  .kolumna_uzytkownicy img, .kolumna_oczekujace img, .kolumna_przeslane img {
+    margin: 8px 15px 0 0px;
+    float:left;
+  }
+
+  .kolumna_przyciski {
+    display:inline;
+  }
+
+  #blok_wideo #wideo, #blok_wideo #stream, #lista_filmow_podobnych li img  {
+    width: 316px;
+    height: 178px;
+  }
+
+  #przyciski_filmu #przyciski_filmu_lewa button {
+    width: 100%;
+    margin: 0 0 16px 0;
+  }
+
+  #przyciski_filmu #przyciski_filmu_lewa form, #przyciski_filmu #przyciski_filmu_lewa {
+    float:none;
+  }
+
+  #przyciski_filmu #przyciski_filmu_prawa {
+    float: left;
+  }
+
+  #przyciski_filmu #przyciski_filmu_prawa button {
+    margin: 0 12px 0 0;
+  }
+
+  #dane_filmu #dane_prawa, #dane_filmu #dane_prawa form button, .polubienie img, .polubienie p  {
+    float: left;
+  }
+
+  #dane_filmu {
+    padding-top: 16px;
+  }
+
+  #dane_filmu .opis {
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+
+  #dane_filmu #dane_prawa p {
+    margin-right: 12px;
+  }
+
+  #blok_lewy_dolny #komentarze button {
+    width:100%;
+  }
+
+  #blok_lewy_dolny #komentarze #wyczysc_komentarz {
+    margin-bottom: 16px;
+  }
+
+  .blok_panelu .przeslane_przyciski button.przycisk_2{
+    margin-right: 0;
+  }
+
+  .blok_panelu .przeslane_przyciski p {
+    margin-left: 2px;
+    margin-top: 0;
+  }
+
+  .formularz_moje_dane input[type="email"], .formularz_moje_dane input[type="text"] {
+    width: 151px;
+  }
+
+  .formularz_moje_dane .dwa_przyciski button {
+    width: calc(100% - 18px);
+  }
+
+  .blok_formularza .dwa_przyciski button.przycisk_2 {
+    margin-right: 0;
+  }
+
+  .blok_formularza .paginacja-2{
+    margin-bottom: 30px;
+  }
+
+  .naglowek_formularza span {
+    float: left;
+    margin-top: 16px;
+    margin-bottom: 11px;
+  }
+
+  p.newsletter {
+    margin: -2px 0 0 16px;
+  }
+
+  .blok_formularza input[type="radio"] {
+    margin-left: 35px;
+  }
+
+  .tytul_i_opis p {
+    display:inline;
+  }
+
+  .blok_wideo {
+    max-width: 320px;
+  }
+
+  #lista_filmow_podobnych h2 {
+    margin: 2px 8px 8px 8px;
+    max-width: 304px;
+  }
+
+}
