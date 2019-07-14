@@ -31,11 +31,11 @@ Serwis umożliwia:
 
 # Zrzuty ekranu
 
-![Alt text](/screenshots/1.PNG?raw=true "Optional Title")
+![Alt text](/screenshots/1.png?raw=true "Optional Title")
 
-![Alt text](/screenshots/3.PNG?raw=true "Optional Title")
+![Alt text](/screenshots/3.png?raw=true "Optional Title")
 
-![Alt text](/screenshots/5.PNG?raw=true "Optional Title")
+![Alt text](/screenshots/5.png?raw=true "Optional Title")
 
 # Dokumenty
 
