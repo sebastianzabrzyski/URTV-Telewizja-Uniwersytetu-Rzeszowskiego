@@ -29,6 +29,10 @@ Serwis umożliwia:
 - [PHPMailer](https://github.com/PHPMailer/PHPMailer)
 - [Ant Media Server](https://github.com/ant-media/Ant-Media-Server)
 
+# Dokumenty
+
+[Praca dyplomowa](/Praca_dyplomowa.pdf)
+
 # Zrzuty ekranu
 
 ![Alt text](/screenshots/1.png?raw=true "Optional Title")
@@ -40,7 +44,3 @@ Serwis umożliwia:
 ![Alt text](/screenshots/4.png?raw=true "Optional Title")
 
 ![Alt text](/screenshots/5.png?raw=true "Optional Title")
-
-# Dokumenty
-
-[Praca dyplomowa](/Praca_dyplomowa.pdf)
