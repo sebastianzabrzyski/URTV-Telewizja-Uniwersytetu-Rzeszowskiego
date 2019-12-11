@@ -13,7 +13,7 @@ Serwis umożliwia:
 - Wyszukiwanie i filtrowanie przesłanych materiałów według określonych parametrów
 - Otrzymywanie powiadomień e-mail o nowych materiałach (newsletter)
 - Resetowanie zapomnianego hasła do konta
-- Dodawanie komentarzy do materiałów
+- Dodawanie komentarzy i ocen do materiałów
 - Udostępnianie materiałów w serwisach społecznościowych
 - Zabezpieczenie dostępu do materiałów hasłem
 - Dostęp do panelu administratora (dodawanie nowych kategorii filmów, edycja danych oraz uprawnień użytkowników, akceptacja przesyłanych materiałów)
