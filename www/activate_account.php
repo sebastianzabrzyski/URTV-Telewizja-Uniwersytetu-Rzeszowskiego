@@ -1,3 +1,6 @@
+<!-- Skrypt potwierdzający rejestrację użytkownika i dodający konto do bazy danych -->
+
+
 <?php
 
 require_once("functions.php");

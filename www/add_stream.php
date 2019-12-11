@@ -1,3 +1,6 @@
+<!-- Strona z dodawaniem nowej transmisji wideo na żywo -->
+
+
 <?php
 
 require_once("functions.php");

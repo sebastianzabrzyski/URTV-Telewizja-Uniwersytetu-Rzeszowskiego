@@ -1,3 +1,5 @@
+<!-- Strona z polityką prywatności -->
+
 <?php
 
 require_once("functions.php");

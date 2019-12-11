@@ -1,3 +1,5 @@
+<!-- Strona ze zmianą adresu e-mail użytkownika -->
+
 <?php
 
 require_once("functions.php");

@@ -1,3 +1,5 @@
+<!-- Strona z panelem administratora -->
+
 <?php
 
 require_once("functions.php");

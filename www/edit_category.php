@@ -1,3 +1,5 @@
+<!-- Strona z edycją kategorii materiałów wideo -->
+
 <?php
 
 require_once("functions.php");

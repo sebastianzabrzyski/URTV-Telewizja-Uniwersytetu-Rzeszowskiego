@@ -1,3 +1,5 @@
+<!-- Strona z materiałem wideo -->
+
 <?php
 
 //error_reporting(0);
@@ -174,7 +176,7 @@ $wynik = wykonajSQL($polaczenie_BD,$zapytanie_SQL);
 
 
 if ($wynik->num_rows > 0) {
-    // output data of each row
+   
     while($wiersz = $wynik->fetch_assoc()) {
 
         array_push($kategorie_ids,$wiersz["Category_ID"]);
@@ -190,7 +192,7 @@ $wynik = wykonajSQL($polaczenie_BD,$zapytanie_SQL);
 
 
 if ($wynik->num_rows > 0) {
-    // output data of each row
+   
     while($wiersz = $wynik->fetch_assoc()) {
 
         array_push($kategorie_nazwy,$wiersz["Name"]);
@@ -220,7 +222,7 @@ $zapytanie_SQL = "SELECT Name FROM tags WHERE Movie_ID = {$id_filmu};";
 $wynik = wykonajSQL($polaczenie_BD,$zapytanie_SQL);
 
 if ($wynik->num_rows > 0) {
-    // output data of each row
+   
     while($wiersz = $wynik->fetch_assoc()) {
         $tag = $wiersz["Name"];
         array_push($tagi_tablica, $tag);
@@ -235,7 +237,7 @@ $zapytanie_SQL = "SELECT Type, COUNT(*) AS Liczba FROM likes WHERE Movie_ID = {$
 $wynik = wykonajSQL($polaczenie_BD,$zapytanie_SQL);
 
 if ($wynik->num_rows > 0) {
-    // output data of each row
+  
     while($wiersz = $wynik->fetch_assoc()) {
 
         $typ = $wiersz["Type"];
@@ -323,7 +325,7 @@ $wynik = wykonajSQL($polaczenie_BD,$zapytanie_SQL);
 $tytul_podobny = $id_filmu_podobny = $miniaturka_podobny = $adres_podobny = null;
 
 if ($wynik->num_rows > 0) {
-    // output data of each row
+  
     while($wiersz = $wynik->fetch_assoc()) {
         $id_filmu_podobny = $wiersz["ID"];
         $nazwa_pliku_podobny = $wiersz["Filename"];

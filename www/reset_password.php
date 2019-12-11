@@ -1,3 +1,5 @@
+<!-- Strona resetowania hasła do konta użytkownika -->
+
 <?php
 
 require_once("functions.php");

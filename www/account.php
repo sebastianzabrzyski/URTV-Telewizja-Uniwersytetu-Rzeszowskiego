@@ -1,3 +1,4 @@
+<!-- Strona z panelem użytkownika -->
 
 <?php
 

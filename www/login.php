@@ -1,3 +1,5 @@
+<!-- Strona z logowaniem na konto -->
+
 <?php
 
 require_once("functions.php");

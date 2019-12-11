@@ -1,3 +1,5 @@
+<!-- Skrypt wypisujący użytkownika z listy subskrypcji -->
+
 <?php
 
 require_once("functions.php");

@@ -1,3 +1,5 @@
+<!-- Strona pokazująca wyniki wyszukiwania materiałów wideo -->
+
 <?php
 //error_reporting(0);
 

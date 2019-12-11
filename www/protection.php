@@ -1,3 +1,5 @@
+<!-- Strona zabezpieczająca materiał wideo hasłem -->
+
 <?php
 
 require_once("functions.php");

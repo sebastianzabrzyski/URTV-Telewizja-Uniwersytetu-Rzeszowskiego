@@ -1,3 +1,5 @@
+<!-- Strona z dodawaniem nowej kategorii materiałów filmowych -->
+
 <?php
 
 require_once("functions.php");

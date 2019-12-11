@@ -1,3 +1,5 @@
+<!-- Skrypt usuwający kategorię materiałów filmowych -->
+
 <?php
 
 require_once("functions.php");

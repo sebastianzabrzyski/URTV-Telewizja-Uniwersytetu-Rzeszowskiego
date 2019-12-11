@@ -1,3 +1,6 @@
+<!-- Strona "O serwisie" -->
+
+
 <?php
 
 require_once("functions.php");

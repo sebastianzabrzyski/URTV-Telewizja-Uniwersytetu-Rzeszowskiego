@@ -1,3 +1,5 @@
+<!-- Strona z formularzem kontaktowym -->
+
 <?php
 require_once("functions.php");
 sprawdzZalogowanie("","");

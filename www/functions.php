@@ -1,4 +1,6 @@
-﻿<?php
+﻿<!-- Skrypt z często używanymi funkcjami -->
+
+<?php
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;

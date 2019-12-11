@@ -1,3 +1,5 @@
+<!-- Skrypt pobierający klucz transmisji na żywo -->
+
 <?php
 
 if( isset( $_POST['id'] ) )

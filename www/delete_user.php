@@ -1,3 +1,5 @@
+<!-- Skrypt usuwający konto użytkownika z serwisu -->
+
 <?php
 
 require_once("functions.php");

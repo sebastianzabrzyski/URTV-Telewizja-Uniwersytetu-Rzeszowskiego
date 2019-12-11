@@ -1,3 +1,5 @@
+<!-- Strona z edycją danych użytkownika -->
+
 <?php
 
 require_once("functions.php");

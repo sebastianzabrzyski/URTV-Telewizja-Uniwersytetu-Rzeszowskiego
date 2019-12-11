@@ -1,3 +1,5 @@
+<!-- Strona ze zmianą hasła użytkownika -->
+
 <?php
 
 require_once("functions.php");

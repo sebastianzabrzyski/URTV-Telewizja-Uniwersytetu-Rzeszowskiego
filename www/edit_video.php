@@ -1,3 +1,5 @@
+<!-- Strona z edycją danych materiału wideo -->
+
 <?php
 
 require_once("functions.php");

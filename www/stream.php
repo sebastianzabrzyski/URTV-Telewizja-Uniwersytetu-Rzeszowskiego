@@ -1,3 +1,5 @@
+<!-- Strona z transmisją na żywo -->
+
 <?php
 
 //error_reporting(0);

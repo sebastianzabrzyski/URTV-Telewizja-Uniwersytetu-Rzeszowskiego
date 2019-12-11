@@ -1,3 +1,6 @@
+<!-- Strona z dodawaniem nowego materiału filmowego -->
+
+
 <?php
 
 require_once("functions.php");

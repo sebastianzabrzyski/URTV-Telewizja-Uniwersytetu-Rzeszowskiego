@@ -1,3 +1,6 @@
+<!-- Skrypt do akceptowania materiałów wideo przesłanych przez użytkowników -->
+
+
 <?php
 require_once("functions.php");
 

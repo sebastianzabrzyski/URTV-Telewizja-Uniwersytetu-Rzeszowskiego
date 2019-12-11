@@ -1,3 +1,5 @@
+<!-- Skrypt usuwający materiał filmowy -->
+
 <?php
 
 require_once("functions.php");

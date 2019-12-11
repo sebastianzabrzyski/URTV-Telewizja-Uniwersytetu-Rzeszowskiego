@@ -1,3 +1,5 @@
+<!-- Strona umożliwiająca rejestrację użytkownika w serwisie -->
+
 <?php
 
 require_once("functions.php");

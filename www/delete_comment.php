@@ -1,3 +1,5 @@
+<!-- Skrypt usuwający komentarze dodane do materiału wideo -->
+
 <?php
 
 require_once("functions.php");

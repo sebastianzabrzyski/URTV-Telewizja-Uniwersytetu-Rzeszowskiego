@@ -1,3 +1,5 @@
+<!-- Strona główna serwisu -->
+
 <?php
 //error_reporting(0);
 require_once("functions.php");

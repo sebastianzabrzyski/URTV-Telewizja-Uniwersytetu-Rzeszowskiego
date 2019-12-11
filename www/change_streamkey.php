@@ -1,3 +1,5 @@
+<!-- Skrypt generujący nowy kod transmisji na żywo -->
+
 <?php
 if( isset( $_POST['id'] ) )
 {

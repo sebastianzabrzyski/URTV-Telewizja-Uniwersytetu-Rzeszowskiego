@@ -1,3 +1,5 @@
+<!-- Strona z warunkami użytkowania serwisu -->
+
 <?php
 
 require_once("functions.php");
