@@ -16,7 +16,7 @@ Serwis umożliwia:
 - Dodawanie komentarzy do materiałów
 - Udostępnianie materiałów w serwisach społecznościowych
 - Zabezpieczenie dostępu do mariałów hasłem
-- Dostęp do panelu administratora
+- Dostęp do panelu administratora (dodawanie nowych kategorii filmów, edycja danych oraz uprawnień użytkowników, akceptacja przesyłanych filmów)
 
 # Wykorzystane technologie i biblioteki:
 
