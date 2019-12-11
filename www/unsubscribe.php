@@ -5,21 +5,21 @@ ustawSesje();
 
 if ($_SERVER['REQUEST_METHOD'] == 'GET') {
 
-  $kod = $_GET['mail'];
-  $conn = polaczDB();
-  $kod = $conn->real_escape_string($kod);
-  $query = "DELETE FROM newsletter WHERE md5(Email) = '{$kod}';";
-  $result = queryDB($conn,$query);
+    $kod = $_GET['mail'];
+    $polaczenie_BD = polaczDB();
+    $kod = $polaczenie_BD->real_escape_string($kod);
+    $zapytanie_SQL = "DELETE FROM newsletter WHERE md5(Email) = '{$kod}';";
+    $wynik = wykonajSQL($polaczenie_BD,$zapytanie_SQL);
 
-  if($conn->affected_rows > 0) {
+    if($polaczenie_BD->affected_rows > 0) {
 
-    pokazKomunikat("Zostałeś wypisany z newslettera");
-    przekierowanie("./index.php");
+        pokazKomunikat("Zostałeś wypisany z newslettera");
+        przekierowanie("./index.php");
 
-  } else {
+    } else {
 
-    pokazKomunikat("Nie odnaleziono takiego adresu e-mail w naszej bazie");
-    przekierowanie("./index.php");
-  }
+        pokazKomunikat("Nie odnaleziono takiego adresu e-mail w naszej bazie");
+        przekierowanie("./index.php");
+    }
 }
 ?>

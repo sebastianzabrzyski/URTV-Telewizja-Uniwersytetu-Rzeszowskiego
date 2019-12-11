@@ -2,26 +2,26 @@
 
 if( isset( $_POST['id'] ) )
 {
-	$user_id = "";
-	require_once("functions.php");
-	sprawdzZalogowanie("","");
-	$conn = polaczDB();
-	$user_id = $conn->real_escape_string($user_id);
-	$query = "SELECT Streamkey_active
+    $id_uzytkownika = "";
+    require_once("functions.php");
+    sprawdzZalogowanie("","");
+    $polaczenie_BD = polaczDB();
+    $id_uzytkownika = $polaczenie_BD->real_escape_string($id_uzytkownika);
+    $zapytanie_SQL = "SELECT Streamkey_active
 	FROM streams
-	WHERE User_ID ={$user_id};";
-	$result = queryDB($conn,$query);
+	WHERE User_ID ={$id_uzytkownika};";
+    $wynik = wykonajSQL($polaczenie_BD,$zapytanie_SQL);
 
-	if ($result->num_rows > 0) {
-		// output data of each row
-		while($row = $result->fetch_assoc()) {
-			$streamkey = $row["Streamkey_active"];
-			echo $streamkey;
-			exit;
-		}
-	} else {
-		echo "";
-		exit;
-	}
+    if ($wynik->num_rows > 0) {
+        // output data of each row
+        while($wiersz = $wynik->fetch_assoc()) {
+            $streamkey = $wiersz["Streamkey_active"];
+            echo $streamkey;
+            exit;
+        }
+    } else {
+        echo "";
+        exit;
+    }
 }
 ?>

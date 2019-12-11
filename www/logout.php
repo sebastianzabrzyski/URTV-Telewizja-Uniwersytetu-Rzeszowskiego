@@ -4,8 +4,8 @@ require_once("functions.php");
 
 if (session_id() == "")
 {
-  ini_set("session.cookie_httponly", True);
-  session_start();
+    ini_set("session.cookie_httponly", True);
+    session_start();
 }
 setcookie("PHPSESSID", "", time() - 6400);
 unset($_SESSION['username']);
