@@ -4,7 +4,7 @@
 
 # URTV - Telewizja Uniwersytetu Rzeszowskiego
 
-Serwis internetowy umożliwiający umieszczanie materiałów wideo związanych z działalnością Uniwersytetu Rzeszowskiego oraz przeprowadzanie transmisji na żywo. Projekt wykonany w ramach pracy dyplomowej.
+Serwis internetowy umożliwiający zamieszczanie materiałów wideo związanych z działalnością Uniwersytetu Rzeszowskiego oraz przeprowadzanie transmisji na żywo.
 
 Serwis umożliwia:
 
