@@ -8,15 +8,15 @@ Serwis internetowy umożliwiający zamieszczanie materiałów wideo związanych 
 
 Serwis umożliwia:
 
-- Przesyłanie materiałów wideo z automatyczną konwersją do formatu MP4
+- Przesyłanie materiałów wideo i automatyczną konwersję do formatu MP4
 - Przeprowadzenie transmisji na żywo za pomocą protokołu RTMP
-- Wyszukiwanie i filtrowanie przesłanych materiałów
-- Zapisanie się do newslettera
-- Odzyskiwanie dostępu do konta
+- Wyszukiwanie i filtrowanie przesłanych materiałów według określonych parametrów
+- Otrzymywanie powiadomień e-mail o nowych materiałach (newsletter)
+- Resetowanie zapomnianego hasła do konta
 - Dodawanie komentarzy do materiałów
 - Udostępnianie materiałów w serwisach społecznościowych
-- Zabezpieczenie dostępu do mariałów hasłem
-- Dostęp do panelu administratora (dodawanie nowych kategorii filmów, edycja danych oraz uprawnień użytkowników, akceptacja przesyłanych filmów)
+- Zabezpieczenie dostępu do materiałów hasłem
+- Dostęp do panelu administratora (dodawanie nowych kategorii filmów, edycja danych oraz uprawnień użytkowników, akceptacja przesyłanych materiałów)
 
 # Wykorzystane technologie i biblioteki:
 
