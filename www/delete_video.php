@@ -1,5 +1,3 @@
-<!-- Skrypt usuwający materiał filmowy -->
-
 <?php
 
 require_once("functions.php");
@@ -10,36 +8,36 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
   $tryb = $_GET['tryb'];
   sprawdzZalogowanie("","./login.php?return=delete_video.php?tryb={$tryb}&id={$id_filmu}");
 
-  $polaczenie_BD = polaczDB();
-  $id_filmu = $polaczenie_BD->real_escape_string($id_filmu);
+  $conn = polaczDB();
+  $id_filmu = $conn->real_escape_string($id_filmu);
   if($tryb == "film") {
-    $zapytanie_SQL = "SELECT User_ID, Filename FROM movies WHERE ID = '{$id_filmu}';";
+    $query = "SELECT User_ID, Filename FROM movies WHERE ID = '{$id_filmu}';";
   } else {
-    $zapytanie_SQL = "SELECT User_ID, Filename FROM streams WHERE ID = '{$id_filmu}';";
+    $query = "SELECT User_ID, Filename FROM streams WHERE ID = '{$id_filmu}';";
   }
 
-  $wynik = wykonajSQL($polaczenie_BD,$zapytanie_SQL);
+  $result = queryDB($conn,$query);
 
-  if ($wynik->num_rows > 0) {
+  if ($result->num_rows > 0) {
 
-    while($wiersz = $wynik->fetch_assoc()) {
-      $id_wlasciciela = $wiersz['User_ID'];
-      $nazwa_pliku = $wiersz['Filename'];
+    while($row = $result->fetch_assoc()) {
+      $id_wlasciciela = $row['User_ID'];
+      $nazwa_pliku = $row['Filename'];
       break;
     }
   }
 
-  if($id_wlasciciela == $id_uzytkownika || $uprawnienia == "Administrator") {
+  if($id_wlasciciela == $user_id || $privileges == "Administrator") {
 
     if($tryb == "film") {
-      $zapytanie_SQL = "DELETE movies, comments, likes, tags, categories_videos FROM movies LEFT JOIN comments ON comments.Movie_ID = movies.ID LEFT JOIN likes ON likes.Movie_ID = movies.ID LEFT JOIN tags ON tags.Movie_ID = movies.ID LEFT JOIN categories_videos ON categories_videos.Movie_ID = movies.ID WHERE movies.ID = '{$id_filmu}';";
+      $query = "DELETE movies, comments, likes, tags, categories_videos FROM movies LEFT JOIN comments ON comments.Movie_ID = movies.ID LEFT JOIN likes ON likes.Movie_ID = movies.ID LEFT JOIN tags ON tags.Movie_ID = movies.ID LEFT JOIN categories_videos ON categories_videos.Movie_ID = movies.ID WHERE movies.ID = '{$id_filmu}';";
     } else {
-      $zapytanie_SQL = "DELETE streams, comments_streams, likes_streams, categories_videos FROM streams LEFT JOIN comments_streams ON comments_streams.Stream_ID = streams.ID LEFT JOIN likes_streams ON likes_streams.Stream_ID = streams.ID LEFT JOIN categories_videos ON categories_videos.Stream_ID = streams.ID WHERE streams.ID = '{$id_filmu}';";
+      $query = "DELETE streams, comments_streams, likes_streams, categories_videos FROM streams LEFT JOIN comments_streams ON comments_streams.Stream_ID = streams.ID LEFT JOIN likes_streams ON likes_streams.Stream_ID = streams.ID LEFT JOIN categories_videos ON categories_videos.Stream_ID = streams.ID WHERE streams.ID = '{$id_filmu}';";
     }
 
-    $wynik = wykonajSQL($polaczenie_BD,$zapytanie_SQL);
+    $result = queryDB($conn,$query);
 
-    if($polaczenie_BD->affected_rows > 0) {
+    if($conn->affected_rows > 0) {
 
       if($tryb == "film") {
 
