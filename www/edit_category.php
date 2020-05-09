@@ -48,7 +48,7 @@ if(isset($_GET['id'])) {
 
   $result= queryDB($conn,$query);
 
-  if ($result->num_rows > 0) {
+  if ($result->num_rows >= 0) {
 
     while($row = $result->fetch_assoc()) {
       $nazwa_grupy = $row["Name"];
