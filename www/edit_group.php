@@ -14,6 +14,7 @@ if(isset($_GET['id'])) {
     pokazKomunikat("Nie posiadasz odpowiednich uprawnień");
   }
 
+  $test= true;
   $menu_1 = "Moje konto";
   $menu_2 = "Wyloguj się";
   $link_1 = "./account.php";
