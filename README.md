@@ -6,7 +6,7 @@
 
 Serwis internetowy umożliwiający zamieszczanie materiałów wideo związanych z działalnością Uniwersytetu Rzeszowskiego oraz przeprowadzanie transmisji na żywo.
 
-Serwis umożliwia:
+Dostępne funkcje:
 
 - Przesyłanie materiałów wideo i automatyczną konwersję do formatu MP4
 - Przeprowadzenie transmisji na żywo za pomocą protokołu RTMP
